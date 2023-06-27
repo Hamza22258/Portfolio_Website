@@ -1,0 +1,113 @@
+@import "../../global.scss";
+.experience-container {
+  margin-top: 1rem;
+  .experience-heading-1 {
+    text-align: center;
+  }
+  ul {
+    color: snow;
+    text-align: left;
+    li {
+      margin-top: 5px;
+      transition: all 0.3s ease-out;
+    }
+
+    li:hover {
+      font-weight: bold;
+    }
+    span {
+      color: black;
+    }
+  }
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  @include mobile {
+    display: inline;
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    .card-logo {
+      display: flex;
+      gap: 20px;
+    }
+    p {
+      font-size: small;
+    }
+    img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  .card-header-1 {
+    display: flex;
+    justify-content: flex-start;
+    .card-logo {
+      display: flex;
+    }
+    p {
+      font-size: small;
+    }
+    img {
+      height: 60px;
+      width: 100px;
+    }
+  }
+}
+.row {
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.card {
+  padding: 4rem 1rem 7rem 1rem;
+  background-color: rgb(219, 102, 126);
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    background-color: skyblue;
+    top: 0px;
+    right: 0px;
+    border-bottom: 20px solid darken(crimson, 5%);
+    border-left: 20px solid darken(crimson, 5%);
+    border-right: 20px solid $backgroundColor;
+    border-top: 20px solid $backgroundColor;
+    position: absolute;
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+  }
+  &:before {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid darken(crimson, 5%);
+    border-right: 40px solid darken(crimson, 5%);
+    border-left: 40px solid $backgroundColor;
+    border-bottom: 40px solid $backgroundColor;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    filter: drop-shadow(7px -7px 5px rgba(0, 0, 0, 0.5));
+    margin-right: 10%;
+  }
+  &:nth-of-type(1) {
+    margin-right: 9%;
+  }
+  h2 {
+    margin-top: 1rem;
+    color: snow;
+    margin-bottom: 0.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  p {
+    color: snow;
+    font-size: 1.1rem;
+    line-height: 140%;
+  }
+}
