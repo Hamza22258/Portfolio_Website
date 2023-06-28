@@ -7,6 +7,25 @@
   justify-content: center;
   position: relative;
 
+  .button {
+    align-self: last baseline;
+    margin-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: rgb(71, 71, 71);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
   .arrow {
     height: 50px;
     position: absolute;
@@ -61,7 +80,7 @@
         }
 
         .left {
-          flex: 4;
+          flex: 8;
           height: 80%;
           display: flex;
           align-items: center;
@@ -97,17 +116,21 @@
               }
             }
             h2 {
-              font-size: 20px;
+              font-size: 30px;
 
               @include mobile {
                 font-size: 13px;
               }
             }
             p {
-              font-size: 13px;
+              font-size: 14px;
               @include mobile {
                 display: none;
               }
+            }
+            .project-anchor {
+              color: inherit;
+              text-decoration: inherit;
             }
             span {
               font-size: 12px;
