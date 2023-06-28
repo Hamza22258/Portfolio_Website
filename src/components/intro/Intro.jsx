@@ -68,7 +68,7 @@ export default function Intro() {
             </button>
           </div>
         </div>
-        <a href="#portfolio" className="intro-arrow">
+        <a href="#experience" className="intro-arrow">
           <img src="assets/down.png" alt="" />
         </a>
       </div>
