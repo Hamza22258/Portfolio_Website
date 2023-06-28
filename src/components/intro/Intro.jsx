@@ -25,7 +25,7 @@ export default function Intro() {
       strings: [
         "Software Engineer",
         "Full Stack developer",
-        "Cyber Security",
+        "Cyber Security Enthusiast",
         "Gamer",
       ],
     });
