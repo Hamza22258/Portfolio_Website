@@ -4,7 +4,7 @@ import "./Experience.scss";
 
 export default function Experience() {
   return (
-    <div className="experience-container">
+    <div className="experience-container" id="experience">
       <h1 className="experience-heading-1">Work Experience</h1>
       <div className="cards">
         <div className="row">

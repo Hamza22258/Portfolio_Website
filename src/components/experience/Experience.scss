@@ -9,11 +9,11 @@
     text-align: left;
     li {
       margin-top: 5px;
-      transition: all 0.3s ease-out;
+      transition: all 0.2s ease-out;
     }
 
     li:hover {
-      font-weight: bold;
+      transform: scaleY(1.2);
     }
     span {
       color: black;
@@ -22,7 +22,6 @@
 }
 .cards {
   display: flex;
-  justify-content: space-between;
   @include mobile {
     display: inline;
   }
@@ -43,7 +42,7 @@
   }
   .card-header-1 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     .card-logo {
       display: flex;
     }
@@ -51,8 +50,8 @@
       font-size: small;
     }
     img {
-      height: 60px;
-      width: 100px;
+      height: auto;
+      width: 120px;
     }
   }
 }
@@ -104,10 +103,11 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 1.2rem;
   }
   p {
     color: snow;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     line-height: 140%;
   }
 }
