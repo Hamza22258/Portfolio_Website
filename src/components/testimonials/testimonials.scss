@@ -1,20 +1,19 @@
 @import "../../global.scss";
 
 .testimonials {
-  background-color: white;
+  background-color: $backgroundColor;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @include mobile{
+  @include mobile {
     justify-content: space-around;
   }
-
 
   h1 {
     font-size: 50px;
 
-    @include mobile{
+    @include mobile {
       font-size: 20px;
     }
   }
@@ -26,12 +25,12 @@
     align-items: center;
     justify-content: center;
 
-    @include mobile{
+    @include mobile {
       flex-direction: column;
       height: 100%;
     }
 
-    .card {
+    .card-testimonial {
       width: 250px;
       height: 70%;
       border-radius: 10px;
@@ -42,25 +41,25 @@
       padding: 20px;
       transition: all 1s ease;
 
-      @include mobile{
+      @include mobile {
         height: 180px;
         margin: 10px 0;
       }
 
-      &.featured{
-          width: 300px;
-          height: 75%;
-          margin: 0 30px;
+      &.featured {
+        width: 300px;
+        height: 75%;
+        margin: 0 30px;
 
-          @include mobile{
-            width: 250px;
-            height: 180px;
-            margin: 1px;
-          }
+        @include mobile {
+          width: 250px;
+          height: 180px;
+          margin: 1px;
+        }
       }
 
-      &:hover{
-          transform: scale(1.1);
+      &:hover {
+        transform: scale(1.1);
       }
 
       .top {
@@ -80,7 +79,7 @@
             object-fit: cover;
             margin: 0 30px;
 
-            @include mobile{
+            @include mobile {
               width: 30px;
               height: 30px;
             }
@@ -93,7 +92,7 @@
         border-radius: 10px;
         background-color: rgb(250, 244, 245);
 
-        @include mobile{
+        @include mobile {
           font-size: 12px;
           padding: 5px;
         }
@@ -107,15 +106,15 @@
         h3 {
           margin-bottom: 5px;
 
-          @include mobile{
+          @include mobile {
             font-size: 14px;
           }
         }
-        h4{
-            color: rgb(121, 115, 115);
-            @include mobile{
-              font-size: 13px;
-            }
+        h4 {
+          color: rgb(121, 115, 115);
+          @include mobile {
+            font-size: 13px;
+          }
         }
       }
     }
