@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-  background-color: white;
+  background-color: $backgroundColor;
   display: flex;
   @include mobile {
     flex-direction: column;
@@ -75,9 +75,72 @@
         }
         .icon {
           font-size: 45px;
+          transition: transform 0.3s ease;
+        }
+        .icon:hover {
+          transform: scale(1.1);
         }
       }
     }
+
+    // Button styles
+    $primaryColor: crimson;
+    $secondaryColor: #ff5722;
+    $transitionDuration: 0.3s;
+    $boxShadowColor: rgba(0, 0, 0, 0.2);
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: $primaryColor;
+      border: 1px solid $primaryColor;
+      cursor: pointer;
+      transition: background-color $transitionDuration ease,
+        transform $transitionDuration ease, box-shadow $transitionDuration ease;
+
+      &:hover {
+        background-color: $secondaryColor;
+        transform: translateY(2px);
+        box-shadow: 0 4px 8px $boxShadowColor;
+
+        &::before {
+          animation: spin 1s infinite; // Spin animation applied only on hover
+        }
+      }
+
+      &:active {
+        background-color: $secondaryColor;
+        transform: translateY(4px);
+        box-shadow: 0 2px 4px $boxShadowColor;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &::before {
+        content: "\2193"; // Unicode arrow-down character
+        margin-right: 4px;
+        display: inline-block;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+
     .intro-arrow {
       position: absolute;
       bottom: 10px;
