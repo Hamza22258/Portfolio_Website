@@ -17,7 +17,7 @@
   }
   ul {
     margin: 0;
-    padding: 0;
+    padding: 5px;
     list-style: none;
     font-size: 25px;
     font-weight: 300;
@@ -29,9 +29,23 @@
         font-size: inherit;
         color: inherit;
         text-decoration: none;
-      }
-      &:hover {
-        font-weight: 500;
+        transition: all 0.1s ease;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 0;
+          height: 2px;
+          background-color: #fff; /* Change to the desired color */
+          transform: translateX(-50%);
+          transition: width 0.3s;
+          transform-origin: center;
+        }
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
   }
