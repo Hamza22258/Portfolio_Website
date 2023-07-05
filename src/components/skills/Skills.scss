@@ -1,1 +1,78 @@
 @import "../../global.scss";
+ul {
+  font-family: "Open Sans", sans-serif;
+}
+.skill-container {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .section-1 {
+    padding: 5px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .tools-img-container {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    img {
+      width: 70px;
+      transition: all 1s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .section-tools {
+    margin: 20px;
+    border: 1px solid;
+    background-color: white;
+    padding: 15px;
+    transition: all 1s ease;
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    .tools-list {
+      padding: 10px;
+      font-size: large;
+      li {
+        padding-top: 5px;
+      }
+    }
+  }
+  .section-cloud {
+    margin: 20px;
+    border: 1px solid;
+    background-color: white;
+    padding: 15px;
+    transition: all 1s ease;
+    &:hover {
+      transform: scale(1.02);
+    }
+    .cloud-image-container {
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+      img {
+        width: 70px;
+        height: 70px;
+        transition: all 1s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      .mongo-db {
+        width: 90px;
+      }
+    }
+    .cloud-list {
+      padding: 10px;
+      font-size: large;
+      li {
+        padding-top: 5px;
+      }
+    }
+  }
+}

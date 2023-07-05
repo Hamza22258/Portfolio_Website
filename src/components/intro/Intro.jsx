@@ -42,7 +42,10 @@ export default function Intro() {
           <h2>Hi There, I'm</h2>
           <h1>Hamza Malik</h1>
           <h3>
-            -> <span ref={textRef}> </span>
+            ->{" "}
+            <span style={{ fontFamily: "Courier New" }} ref={textRef}>
+              {" "}
+            </span>
           </h3>
           <div className="icons">
             <a href="https://pk.linkedin.com/in/iamhamzamalik" target="blank">
