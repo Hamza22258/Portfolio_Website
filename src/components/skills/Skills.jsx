@@ -17,6 +17,7 @@ export default function Skills() {
             <img src={process.env.PUBLIC_URL + "images/c.png"} alt="" />
             <img src={process.env.PUBLIC_URL + "images/python.png"} alt="" />
             <img src={process.env.PUBLIC_URL + "images/ruby.png"} alt="" />
+            <img src={process.env.PUBLIC_URL + "images/java.png"} alt="" />
             <img
               src={process.env.PUBLIC_URL + "images/typescript.png"}
               alt=""
