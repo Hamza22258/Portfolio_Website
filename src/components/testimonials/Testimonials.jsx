@@ -4,34 +4,25 @@ export default function Testimonials() {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
-      img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      name: "Osama Manzoor",
+      title: "Software Engineer",
       icon: "assets/twitter.png",
-      desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      desc: "Working with Hamza has been a privilege. As a software engineer, their technical prowess is unmatched. Hamza consistently delivers high-quality code and brings a meticulous attention to detail to every project.",
     },
     {
       id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
-      img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      name: "Syed Umar Ali",
+      title: "Software Engineer",
       icon: "assets/youtube.png",
-      desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+      desc: "Having Hamza as a software engineer on our team has been a game-changer. Their deep understanding of software development principles, coupled with their strong analytical thinking, enables them to tackle complex challenges with ease. Hamza has a keen eye for optimization and efficiency, ensuring that our projects are not only functional but also performant.",
       featured: true,
     },
     {
       id: 3,
-      name: "Martin Harold",
-      title: "CEO of ALBI",
-      img:
-        "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      name: "Muhammad Abubakar",
+      title: "Full Stack Engineer",
       icon: "assets/linkedin.png",
-      desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+      desc: "I have had the pleasure of collaborating with Hamza as a fellow software engineer, and I can attest to their exceptional skills and work ethic. Hamza is a highly motivated and dedicated professional who consistently goes above and beyond to deliver outstanding results.",
     },
   ];
   return (
@@ -39,19 +30,21 @@ export default function Testimonials() {
       <h1>Testimonials</h1>
       <div className="container">
         {data.map((d) => (
-          <div className={d.featured ? "card featured" : "card"}>
+          <div
+            className={
+              d.featured ? "card-testimonial featured" : "card-testimonial"
+            }
+          >
             <div className="top">
               <img src="assets/right-arrow.png" className="left" alt="" />
               <img
                 className="user"
-                src={d.img}
+                src={process.env.PUBLIC_URL + "/images/profile.webp"}
                 alt=""
               />
               <img className="right" src={d.icon} alt="" />
             </div>
-            <div className="center">
-              {d.desc}
-            </div>
+            <div className="center">{d.desc}</div>
             <div className="bottom">
               <h3>{d.name}</h3>
               <h4>{d.title}</h4>
