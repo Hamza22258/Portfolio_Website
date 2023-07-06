@@ -41,35 +41,44 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact" id="contact">
-      <div className="left">
-        <img src="assets/shake.svg" alt="" />
+    <div>
+      <div className="contact" id="contact">
+        <div className="left">
+          <img src="assets/shake.svg" alt="" />
+        </div>
+        <div className="right">
+          <h2>Contact.</h2>
+          <form ref={form} onSubmit={sendEmail}>
+            <input
+              type="email"
+              value={email}
+              name="email"
+              onChange={handleEmailChange}
+              required
+            />
+            <textarea
+              value={message}
+              name="message"
+              onChange={handleMessageChange}
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+            {emailSent && <span>Thanks, I'll reply ASAP :)</span>}
+          </form>
+        </div>
+        <a href="#intro" className="intro-arrow">
+          <button className={`scroll-to-top-button`}>
+            <FontAwesomeIcon icon={faArrowUp} />
+          </button>
+        </a>
       </div>
-      <div className="right">
-        <h2>Contact.</h2>
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="email"
-            value={email}
-            name="email"
-            onChange={handleEmailChange}
-            required
-          />
-          <textarea
-            value={message}
-            name="message"
-            onChange={handleMessageChange}
-            required
-          ></textarea>
-          <button type="submit">Send</button>
-          {emailSent && <span>Thanks, I'll reply ASAP :)</span>}
-        </form>
-      </div>
-      <a href="#intro" className="intro-arrow">
-        <button className={`scroll-to-top-button`}>
-          <FontAwesomeIcon icon={faArrowUp} />
-        </button>
-      </a>
+      <footer class="inline-footer">
+        <div class="footer-content">
+          <span class="icon-left">♚</span>
+          <p>© 2023 - MADE BY HAMZA MALIK</p>
+          <span class="icon-right">♚</span>
+        </div>
+      </footer>
     </div>
   );
 }
