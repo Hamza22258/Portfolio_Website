@@ -14,7 +14,7 @@ export default function Testimonials() {
       name: "Syed Umar Ali",
       title: "Software Engineer",
       icon: "assets/youtube.png",
-      desc: "Having Hamza as a software engineer on our team has been a game-changer. Their deep understanding of software development principles, coupled with their strong analytical thinking, enables them to tackle complex challenges with ease. Hamza has a keen eye for optimization and efficiency, ensuring that our projects are not only functional but also performant.",
+      desc: "Having Hamza as a software engineer on our team has been a game-changer. Their deep understanding of software development principles, coupled with their strong analytical thinking, enables them to tackle complex challenges with ease. Hamza has a keen eye for optimization and efficiency.",
       featured: true,
     },
     {

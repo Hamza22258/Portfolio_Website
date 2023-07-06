@@ -7,6 +7,10 @@
   justify-content: center;
   position: relative;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   .button {
     align-self: last baseline;
     margin-bottom: 5%;

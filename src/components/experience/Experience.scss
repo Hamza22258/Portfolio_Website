@@ -1,7 +1,13 @@
 @import "../../global.scss";
 .experience-container {
+  &::-webkit-scrollbar {
+    display: none;
+  }
   h1 {
     font-size: 50px;
+    @include mobile {
+      font-size: 30px;
+    }
   }
   margin-top: 1rem;
   .experience-heading-1 {
