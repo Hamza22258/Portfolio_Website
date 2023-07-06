@@ -12,14 +12,16 @@ ul {
   h1 {
     text-align: center;
     font-size: 50px;
+    @include mobile {
+      font-size: 30px;
+    }
   }
   .tools-img-container {
     padding: 10px;
-    display: flex;
-    gap: 20px;
     img {
       width: 70px;
       transition: all 1s ease;
+      margin-left: 5px;
       &:hover {
         transform: scale(1.1);
       }
@@ -54,11 +56,10 @@ ul {
     }
     .cloud-image-container {
       padding: 10px;
-      display: flex;
-      gap: 20px;
       img {
         width: 70px;
         height: 70px;
+        margin-left: 5px;
         transition: all 1s ease;
         &:hover {
           transform: scale(1.1);
