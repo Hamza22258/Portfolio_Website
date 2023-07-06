@@ -79,4 +79,22 @@
       }
     }
   }
+  .scroll-to-top-button {
+    position: relative;
+    top: 85%;
+    padding: 20px;
+    margin-right: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: crimson;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .scroll-to-top-button:hover {
+    transform: translateY(-10px);
+  }
 }
