@@ -10,6 +10,32 @@
 ### SCRIPTS
 
 ```
-      npm i
-      npm start
+npm i
+npm start
+```
+
+### DIRECTORY STRUCTURE
+
+```
+├── build (.gitignore)
+├── node_modules (.gitignore)
+├── public
+│   ├── assets
+|   ├── doc
+|   ├── images
+├── src
+│   ├── components
+│   │   ├── component
+│   │   │   ├── Component.jsx
+│   │   │   ├── Component.scss
+│   ├── App.jsx
+│   ├── app.scss
+│   ├── data.js
+│   ├── global.js
+│   ├── index.js
+├── .env (.gitignore)
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
 ```
