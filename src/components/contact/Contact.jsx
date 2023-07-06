@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./contact.scss";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 export default function Contact() {
   const [message, setMessage] = useState(false);
 
@@ -22,6 +23,11 @@ export default function Contact() {
           {message && <span>Thanks, I'll reply ASAP :)</span>}
         </form>
       </div>
+      <a href="#intro" className="intro-arrow">
+        <button className={`scroll-to-top-button`}>
+          <FontAwesomeIcon icon={faArrowUp} />
+        </button>
+      </a>
     </div>
   );
 }
