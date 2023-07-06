@@ -1,0 +1,3 @@
+[build]
+command = "npm install && npx react-scripts build"
+environment = { NODE_VERSION = "14.10.0" }
