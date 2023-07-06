@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./intro.scss";
 import { init } from "ityped";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
@@ -8,6 +8,12 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function Intro() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Simulate data loading or other asynchronous tasks
+    setIsLoaded(true);
+  }, []);
   const textRef = useRef();
   const downloadLinkRef = useRef(null);
 
@@ -31,7 +37,7 @@ export default function Intro() {
     });
   }, []);
   return (
-    <div className="intro" id="intro">
+    <div className={`intro ${isLoaded ? "intro-active" : ""}`} id="intro">
       <div className="left">
         <div className="imageContainer">
           <img src="assets/man.png" alt="" />
