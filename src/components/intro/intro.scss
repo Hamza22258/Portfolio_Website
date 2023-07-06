@@ -1,6 +1,10 @@
 @import "../../global.scss";
 
 .intro {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 2s ease-in-out, transform 0.5s ease-in-out;
+
   background-color: $backgroundColor;
   display: flex;
   @include mobile {
@@ -156,4 +160,8 @@
       }
     }
   }
+}
+.intro-active {
+  opacity: 1;
+  transform: translateY(0);
 }
