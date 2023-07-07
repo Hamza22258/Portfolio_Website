@@ -9,23 +9,76 @@ export default function Skills() {
         <div className="section-tools">
           <h2>Tools and Technologies</h2>
           <div className="tools-img-container">
-            <img src={process.env.PUBLIC_URL + "images/html.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/css-3.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/sass.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/js.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/c++.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/c.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/python.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/ruby.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/java.png"} alt="" />
             <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/html.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/css-3.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/sass.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/js.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/c++.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/c.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/python.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/ruby.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/java.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
               src={process.env.PUBLIC_URL + "images/typescript.png"}
               alt=""
             />
-            <img src={process.env.PUBLIC_URL + "images/react.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/rails.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/django.jpeg"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/nodejs.png"} alt="" />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/react.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/rails.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/django.jpeg"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/nodejs.png"}
+              alt=""
+            />
           </div>
           <ul className="tools-list">
             <li>
@@ -68,17 +121,42 @@ export default function Skills() {
         <div className="section-cloud">
           <h2>Devops</h2>
           <div className="cloud-image-container">
-            <img src={process.env.PUBLIC_URL + "images/docker.png"} alt="" />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/docker.png"}
+              alt=""
+            />
             <img
               src={process.env.PUBLIC_URL + "images/kubernetes.png"}
               alt=""
             />
-            <img src={process.env.PUBLIC_URL + "images/jenkins.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/aws.webp"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/mysql.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/postgres.png"} alt="" />
-            <img src={process.env.PUBLIC_URL + "images/sqlite.png"} alt="" />
             <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/jenkins.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/aws.webp"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/mysql.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/postgres.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + "images/sqlite.png"}
+              alt=""
+            />
+            <img
+              loading="lazy"
               className="mongo-db"
               src={process.env.PUBLIC_URL + "images/mongodb.png"}
               alt=""
