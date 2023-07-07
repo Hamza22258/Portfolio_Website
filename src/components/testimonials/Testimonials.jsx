@@ -36,13 +36,19 @@ export default function Testimonials() {
             }
           >
             <div className="top">
-              <img src="assets/right-arrow.png" className="left" alt="" />
               <img
+                loading="lazy"
+                src="assets/right-arrow.png"
+                className="left"
+                alt=""
+              />
+              <img
+                loading="lazy"
                 className="user"
                 src={process.env.PUBLIC_URL + "/images/profile.webp"}
                 alt=""
               />
-              <img className="right" src={d.icon} alt="" />
+              <img loading="lazy" className="right" src={d.icon} alt="" />
             </div>
             <div className="center">{d.desc}</div>
             <div className="bottom">

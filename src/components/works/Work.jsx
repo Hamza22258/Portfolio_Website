@@ -51,7 +51,7 @@ export default function Work() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
-                    <img src={d.icon} alt="" />
+                    <img loading="lazy" src={d.icon} alt="" />
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
@@ -62,6 +62,7 @@ export default function Work() {
               </div>
               <div className="right">
                 <img
+                  loading="lazy"
                   src={
                     process.env.PUBLIC_URL + "/images/project" + d.id + ".avif"
                   }

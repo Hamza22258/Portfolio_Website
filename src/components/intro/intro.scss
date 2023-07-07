@@ -165,3 +165,9 @@
   opacity: 1;
   transform: translateY(0);
 }
+@media (hover: none) {
+  /* Target devices with no hover capability (usually touch devices) */
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}

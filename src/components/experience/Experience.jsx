@@ -11,6 +11,7 @@ export default function Experience() {
             <div className="card-header">
               <div className="card-logo">
                 <img
+                  loading="lazy"
                   src={process.env.PUBLIC_URL + "/images/devsinc.jpeg"}
                   alt=""
                 />
@@ -60,6 +61,7 @@ export default function Experience() {
             <div className="card-header-1">
               <div className="card-logo">
                 <img
+                  loading="lazy"
                   src={process.env.PUBLIC_URL + "/images/Fiverr-logo.png"}
                   alt=""
                 />
