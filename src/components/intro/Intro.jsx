@@ -40,7 +40,7 @@ export default function Intro() {
     <div className={`intro ${isLoaded ? "intro-active" : ""}`} id="intro">
       <div className="left">
         <div className="imageContainer">
-          <img src="assets/man.png" alt="" />
+          <img src="assets/man-min.png" alt="" />
         </div>
       </div>
       <div className="right">

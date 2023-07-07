@@ -25,6 +25,9 @@ ul {
       &:hover {
         transform: scale(1.1);
       }
+      @include mobile {
+        width: 50px;
+      }
     }
   }
   .section-tools {
@@ -42,6 +45,9 @@ ul {
       font-size: large;
       li {
         padding-top: 5px;
+        @include mobile {
+          font-size: small;
+        }
       }
     }
   }
@@ -64,6 +70,10 @@ ul {
         &:hover {
           transform: scale(1.1);
         }
+        @include mobile {
+          width: 50px;
+          height: 50px;
+        }
       }
       .mongo-db {
         width: 100px;
@@ -74,6 +84,9 @@ ul {
       font-size: large;
       li {
         padding-top: 5px;
+        @include mobile {
+          font-size: small;
+        }
       }
     }
   }
