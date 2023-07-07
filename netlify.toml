@@ -3,6 +3,9 @@
   publish = "build"
   node_version = "18.12.0"
 
+[build.environment]
+CI = "false"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
