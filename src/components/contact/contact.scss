@@ -17,6 +17,11 @@
       height: 100%;
     }
   }
+  .intro-arrow {
+    flex: 0.2;
+    align-self: flex-end;
+    padding-top: 20px;
+  }
   .right {
     flex: 1;
     display: flex;
@@ -82,7 +87,7 @@
   }
   .scroll-to-top-button {
     position: relative;
-    top: 85%;
+
     padding: 20px;
     margin-right: 50px;
     border: none;
